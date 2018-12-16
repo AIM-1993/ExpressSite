@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">
-    <button class="btn btn-primary button">Button</button>
+  <div id="Nav">
+    <h1>About</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'About',
   props: {
     msg: String
   }
@@ -15,4 +15,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  #Nav {
+    background-color: hsl( 15, 30%, 50% );
+  }
 </style>
