@@ -1,13 +1,14 @@
 <template>
   <div id="Home">
-    <h1>Home</h1>
     <Navbar />
+    <Table />
     <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from './Navbar';
+import Table from './Table';
 import Footer from './Footer';
 
 
@@ -18,6 +19,7 @@ export default {
   },
   components: {
     Navbar,
+    Table,
     Footer
   }
 }
@@ -26,7 +28,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  #Nav {
-    background-color: hsl( 15, 30%, 50% );
-  }
+
+
 </style>
