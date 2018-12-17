@@ -49,6 +49,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #container {
+    position: relative;
+    padding: 1.2%;
+    margin: 10% 15%;
+    background: #1111;
+    min-height: 70vh;
+    font-family: sans-serif;
+  }
   .table {
     width: 60%;
     position: relative;
@@ -61,17 +71,6 @@ export default {
 
   tbody {
     background-color: #ffffef;
-  }
-
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  #container {
-    position: relative;
-    padding: 1.2%;
-    margin: 10% 15%;
-    background: #1111;
-    min-height: 70vh;
-    font-family: sans-serif;
   }
 
   h2 {
@@ -87,6 +86,20 @@ export default {
     background: #1111;
     min-height: 84vh;
     font-family: sans-serif;
+  }
+
+  .table {
+    width: 60%;
+    position: relative;
+    margin:20px auto;
+  }
+
+  .table thead {
+    background-color: #37B6CE;	
+  }
+
+  tbody {
+    background-color: #ffffef;
   }
 
   h2 {
