@@ -1,6 +1,6 @@
 <template>
   <!-- Footer -->
-  <footer class="footer">&#64;Powered By Foundation, Vue.js, MySQL & Flask</footer>
+  <footer class="footer">&#64;Powered By Vue, Express & Bootstrap</footer>
 </template>
 
 <script>
