@@ -25,9 +25,6 @@
 <script>
 export default {
   name: 'Table',
-  props: {
-    msg: String
-  },
   data () {
     return {
       tableData: ""

@@ -13,7 +13,7 @@ import Footer from './Footer';
 
 
 export default {
-  name: 'Scoreboard',
+  name: 'ScoreboardPage',
   props: {
     msg: String
   },

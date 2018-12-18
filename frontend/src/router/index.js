@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Scoreboard from '@/components/Scoreboard'
-import Video from '@/components/Video'
+import ScoreboardPage from '@/components/ScoreboardPage'
+import VideoPage from '@/components/VideoPage'
 Vue.use(Router)
 
 export default new Router({
@@ -12,16 +12,15 @@ export default new Router({
       name: 'Home',
       component: Home
     },
-
     {
       path: '/scoreboard',
-      name: 'Scoreboard',
-      component: Scoreboard
+      name: 'scoreBoardPage',
+      component: ScoreboardPage
     },
     {
       path:'/video',
-      name: 'Video',
-      component: Video
+      name: 'VideoPage',
+      component: VideoPage
     }
   ]
 })

@@ -17,8 +17,7 @@
         > 
         </iframe>
       </div>
-      <hr>
-      <h4>评论</h4>
+      <Comments />
     </div>
     <Footer />
   </div>
@@ -26,15 +25,14 @@
 
 <script>
 import Navbar from './Navbar';
+import Comments from './Comments';
 import Footer from './Footer';
 
 export default {
-  name: 'Video',
-  props: {
-    msg: String
-  },
+  name: 'VideoPage',
   components: {
     Navbar,
+    Comments,
     Footer
   },
   data () {
