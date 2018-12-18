@@ -20,7 +20,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 export default {
-  name: 'Home',
+  name: 'HomePage',
   props: {
     msg: String
   },
