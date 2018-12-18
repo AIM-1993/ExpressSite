@@ -59,6 +59,7 @@ export default {
     min-height: 70vh;
     font-family: sans-serif;
   }
+  
   .table {
     width: 60%;
     position: relative;

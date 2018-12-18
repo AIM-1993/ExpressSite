@@ -2,11 +2,11 @@
   <div id="about">
     <Navbar />
     <div id="container">
-      <label for="player">有趣的非洲名字发音</label>
+      <label for="player">{{ videoname }}</label>
       <div class="jumbotron">
         <iframe
           id="player"
-          src="//player.bilibili.com/player.html?aid=17077187&cid=27908432&page=1"
+          :src="videoaddress"
           scrolling="no" 
           border="0" 
           frameborder="no" 
@@ -18,6 +18,7 @@
         </iframe>
       </div>
       <hr>
+      <h4>评论</h4>
     </div>
     <Footer />
   </div>
@@ -28,13 +29,31 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 export default {
-  name: 'About',
+  name: 'Video',
   props: {
     msg: String
   },
   components: {
     Navbar,
     Footer
+  },
+  data () {
+    return {
+      videoaddress: "",
+      videoname: ''
+    }
+  },
+  created: function () {
+    this.loadData();
+  },
+  methods: {
+    loadData: function () {
+      this.$ajax.get('http://localhost:3000/video')
+      .then((response) => {
+        this.videoaddress = "//" + response.data.result[0].videoaddress;
+        this.videoname = response.data.result[0].videoname;
+      });
+    }
   }
 }
 </script>

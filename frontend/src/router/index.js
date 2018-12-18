@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Scoreboard from '@/components/Scoreboard'
-import About from '@/components/About'
+import Video from '@/components/Video'
 Vue.use(Router)
 
 export default new Router({
@@ -19,9 +19,9 @@ export default new Router({
       component: Scoreboard
     },
     {
-      path:'/about',
-      name: 'About',
-      component: About
+      path:'/video',
+      name: 'Video',
+      component: Video
     }
   ]
 })
