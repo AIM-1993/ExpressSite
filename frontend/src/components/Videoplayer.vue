@@ -14,13 +14,19 @@
       height="600px"
     > 
     </iframe>
+    <Comments />
   </div>
   </div>
 </template>
 
 <script>
+import Comments from './Comments';
+
 export default {
   name: 'VideoPage',
+  components: {
+    Comments
+  },
   data () {
     return {
       videoaddress: "",
@@ -44,39 +50,5 @@ export default {
 
 <style scoped>
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  #container {
-    position: relative;
-    padding: 1.2%;
-    margin: 10% 15%;
-    background: #1111;
-    min-height: 70vh;
-    font-family: sans-serif;
-  }
-
-  h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-}
-
-@media screen and (min-width: 992px){
-  #container {
-    position: relative;
-    padding: 1.2%;
-    margin: 20px 15%;
-    background: #1111;
-    min-height: 84vh;
-    font-family: sans-serif;
-  }
-
-  #player {
-    margin: 0 auto;
-  }
-
-  h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-}
 </style>
 
